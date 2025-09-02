@@ -10,9 +10,26 @@ A FastAPI backend for the Sports League Manager application.
 
 ## Setup
 
-### 1. Install Dependencies
+### 1. Create Virtual Environment and Install Dependencies
 
+**Windows (Recommended):**
 ```bash
+# Run the setup script to create virtual environment and install dependencies
+setup.bat
+```
+
+**Manual Setup:**
+```bash
+# Create virtual environment
+python -m venv venv
+
+# Activate virtual environment (Windows)
+venv\Scripts\activate
+
+# Activate virtual environment (Linux/Mac)
+source venv/bin/activate
+
+# Install dependencies
 pip install -r requirements.txt
 ```
 
@@ -38,7 +55,21 @@ Create a PostgreSQL database named `scoresheet_db` or update the DATABASE_URL in
 
 ### 4. Run the Application
 
+**Windows (Recommended):**
 ```bash
+# Activate virtual environment and start the server
+start.bat
+```
+
+**Manual:**
+```bash
+# Activate virtual environment (Windows)
+venv\Scripts\activate
+
+# Activate virtual environment (Linux/Mac)
+source venv/bin/activate
+
+# Start the server
 python run.py
 ```
 
@@ -99,6 +130,30 @@ Backend/
 ```
 
 ## Development
+
+### Virtual Environment Management
+
+**Quick Commands:**
+- `setup.bat` - Create virtual environment and install dependencies
+- `activate.bat` - Activate virtual environment
+- `start.bat` - Start the server (automatically activates venv)
+
+**Manual Commands:**
+```bash
+# Create virtual environment
+python -m venv venv
+
+# Activate (Windows)
+venv\Scripts\activate
+
+# Activate (Linux/Mac)
+source venv/bin/activate
+
+# Deactivate
+deactivate
+```
+
+### Technology Stack
 
 The application uses:
 - **FastAPI** for the web framework
