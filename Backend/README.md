@@ -10,6 +10,12 @@ A FastAPI backend for the Sports League Manager application.
 
 ## Setup
 
+### Prerequisites
+
+- **Python 3.8+** (recommended: Python 3.11)
+- **PostgreSQL** database server
+- **Git** (for version control)
+
 ### 1. Create Virtual Environment and Install Dependencies
 
 **Windows (Recommended):**
@@ -155,12 +161,21 @@ deactivate
 
 ### Technology Stack
 
+**Python Version:** 3.8+ (recommended: 3.11)
+
 The application uses:
 - **FastAPI** for the web framework
 - **SQLAlchemy** for database ORM
 - **PostgreSQL** as the database
 - **Pydantic** for data validation
 - **Alembic** for database migrations (optional)
+
+### Python Version Management
+
+The project includes:
+- `.python-version` - Specifies Python 3.11 (for pyenv users)
+- `pyproject.toml` - Modern Python project configuration
+- `requirements.txt` - Traditional pip dependencies
 
 ## CORS Configuration
 

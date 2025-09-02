@@ -11,6 +11,12 @@ if errorlevel 1 (
     exit /b 1
 )
 
+REM Check Python version
+for /f "tokens=2" %%i in ('python --version 2^>^&1') do set PYTHON_VERSION=%%i
+echo Found Python version: %PYTHON_VERSION%
+echo Recommended: Python 3.8+ (current project supports 3.8+)
+echo.
+
 echo Python found. Creating virtual environment...
 echo.
 
